@@ -10,6 +10,7 @@ namespace Quan_Li_Nha_Thuoc.Controllers
     {
         public ActionResult Index()
         {
+            // Đức Thể Viết Comment
             return View();
         }
 
