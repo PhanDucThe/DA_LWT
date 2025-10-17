@@ -1,20 +1,53 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿/* --- Modern CSS Reset --- */
+
+/* 1. Sử dụng box-sizing-model dễ dự đoán hơn. */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+/* 2. Xóa margin mặc định. */
+* {
+    margin: 0;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* 3. Cho phép tỷ lệ phần trăm chiều cao hoạt động. */
+html, body {
+    height: 100%;
+}
+
+/* 4. Thêm các giá trị mặc định có thể truy cập và cải thiện việc đọc. */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Cải thiện việc xử lý media mặc định. */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Xóa các kiểu chữ kế thừa mặc định trong form. */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Tránh tràn văn bản. */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Tạo stacking context gốc. */
+#root, #__next {
+    isolation: isolate;
+}
+
+/* --- Kết thúc CSS Reset --- */
+
+
+/* Bắt đầu các style tùy chỉnh của bạn từ đây */
+
+body {
+    /* Ví dụ: */
+    font-family: sans-serif;
 }
