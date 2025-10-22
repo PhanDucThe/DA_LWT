@@ -11,6 +11,7 @@ namespace Quan_Li_Nha_Thuoc.Controllers.Admin
         // GET: Demo
         public ActionResult Index()
         {
+            // them 
             return View();
         }
     }
